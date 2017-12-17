@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-istablet"
+        version="0.1.0">
+
+  <name>Cordova IsTablet Plugin</name>
+  <description>Cordova plugin to check whether device is tablet</description>
+  <author>Raymond Xie</author>
+  <keywords>rjfun,android,tablet,istablet,device</keywords>
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0" />
+    <engine name="cordova-android" version=">=5.0.0" />
+  </engines>
+
+  <js-module src="www/istablet.js" name="istablet">
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="istablet">
+        <param name="android-package" value="com.rjfun.cordova.istablet"/>
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/IsTablet.java" target-dir="src/com/rjfun/cordova/istablet" />
+  </platform>
+
+</plugin>
