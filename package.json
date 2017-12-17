@@ -1,7 +1,7 @@
 {
-  "name": "cordova-plugin-bye",
+  "name": "cordova-plugin-istablet",
   "version": "0.1.0",
-  "description": "Cordova plugin to show bye before quit app",
+  "description": "Cordova plugin to check whether a device is tablet or not",
   "cordova": {
     "id": "cordova-plugin-istablet",
     "platforms": [
